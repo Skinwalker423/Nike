@@ -2,9 +2,14 @@ import { useState } from "react";
 import headerLogo from "../assets/images/header-logo.svg";
 import hamburger from "../assets/icons/hamburger.svg";
 import { navLinks } from "../constants";
+import MobileMenu from "./MobileMenu";
 
 const Nav = () => {
   const [open, setOpen] = useState(false);
+
+  const handleOpenMobileMenu = () => {
+    setOpen((bool) => !bool);
+  };
   return (
     <header className='padding-x'>
       <nav className='flex justify-between items-center max-container'>
@@ -30,7 +35,7 @@ const Nav = () => {
         </ul>
         <div
           onClick={handleOpenMobileMenu}
-          className='hidden max-lg:block'
+          className='hidden max-lg:block relative'
         >
           <img
             src={hamburger}
@@ -38,6 +43,7 @@ const Nav = () => {
             width={25}
             height={25}
           />
+          {open && <MobileMenu />}
         </div>
       </nav>
     </header>
