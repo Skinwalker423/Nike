@@ -1,4 +1,3 @@
-import React from "react";
 import headerLogo from "../assets/images/header-logo.svg";
 import hamburger from "../assets/icons/hamburger.svg";
 
@@ -14,12 +13,15 @@ const Nav = () => {
             height={29}
           />
         </a>
+        <ul className='flex-1 flex justify-center items-center gap-16 max-lg:hidden'>
+          <li>Home</li>
+        </ul>
         <img
           src={hamburger}
           alt='hamburger menu icon'
           width={25}
           height={25}
-          className='md:hidden'
+          className='lg:hidden'
         />
       </nav>
     </header>
