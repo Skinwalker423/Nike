@@ -7,6 +7,11 @@ import ShoeCard from "../components/ShoeCard";
 
 const Hero = () => {
   const [bigShoe, setBigShoe] = useState(bigShoe1);
+
+  const changeBigShoeImage = (shoe: string) => {
+    setBigShoe(shoe);
+  };
+
   return (
     <section
       id='home'
@@ -54,19 +59,19 @@ const Hero = () => {
           width={610}
           height={500}
         />
-      </div>
-      <div>
-        {shoes.map((shoe) => {
-          return (
-            <div key={shoe.thumbnail}>
-              <ShoeCard
-                imgUrl={shoe}
-                bigShoeImage={bigShoe}
-                changeBigShoeImage={setBigShoe}
-              />
-            </div>
-          );
-        })}
+        <div className='flex sm:gap-6 gap-4 absolute -bottom-[5%] sm:left-[10%] max-sm:px-6'>
+          {shoes.map((shoe) => {
+            return (
+              <div key={shoe.thumbnail}>
+                <ShoeCard
+                  imgUrl={shoe}
+                  bigShoeImage={bigShoe}
+                  changeBigShoeImage={changeBigShoeImage}
+                />
+              </div>
+            );
+          })}
+        </div>
       </div>
     </section>
   );

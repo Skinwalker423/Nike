@@ -1,12 +1,10 @@
-import { Dispatch, SetStateAction } from "react";
-
 type ShoeCardProps = {
   imgUrl: {
     thumbnail: string;
     bigShoe: string;
   };
   bigShoeImage: string;
-  changeBigShoeImage: Dispatch<SetStateAction<string>>;
+  changeBigShoeImage: (shoe: string) => void;
 };
 
 const ShoeCard = ({
