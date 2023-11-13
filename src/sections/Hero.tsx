@@ -1,8 +1,12 @@
+import { useState } from "react";
 import Button from "../components/Button";
 import { arrowRight } from "../assets/icons";
-import { statistics } from "../constants";
+import { statistics, shoes } from "../constants";
+import { bigShoe1 } from "../assets/images";
+import ShoeCard from "../components/ShoeCard";
 
 const Hero = () => {
+  const [bigShoe, setBigShoe] = useState(bigShoe1);
   return (
     <section
       id='home'
@@ -22,7 +26,7 @@ const Hero = () => {
           </span>{" "}
           Shoes
         </h1>
-        <p>
+        <p className='text-slate-gray text-lg font-montserrat leading-8 mt-6 mb-14 sm:max-w-sm'>
           Discover stlyish Nike arrivals, quality, comfort,
           and innovation for you active needs.
         </p>
@@ -31,12 +35,38 @@ const Hero = () => {
           {statistics.map(({ label, value }) => {
             return (
               <div key={label}>
-                <p>{value}</p>
-                <p>{label}</p>
+                <p className='text-4xl font-palanquin font-bold'>
+                  {value}
+                </p>
+                <p className='leading-7 font-montserrat text-slate-gray'>
+                  {label}
+                </p>
               </div>
             );
           })}
         </div>
+      </div>
+      <div className='relative flex-1 flex justify-center items-center xl:min-h-screen max-xl:py-40 bg-primary bg-hero bg-cover bg-center'>
+        <img
+          className='object-contain z-10 relative'
+          src={bigShoe}
+          alt='shoe collection'
+          width={610}
+          height={500}
+        />
+      </div>
+      <div>
+        {shoes.map((shoe) => {
+          return (
+            <div key={shoe.thumbnail}>
+              <ShoeCard
+                imgUrl={shoe}
+                bigShoeImage={bigShoe}
+                changeBigShoeImage={setBigShoe}
+              />
+            </div>
+          );
+        })}
       </div>
     </section>
   );
