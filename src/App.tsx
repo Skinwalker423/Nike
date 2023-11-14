@@ -17,7 +17,9 @@ function App() {
       <section className='xl:padding-1 wide:padding-r padding-b'>
         <Hero />
       </section>
-      <PopularProducts />
+      <section className='padding'>
+        <PopularProducts />
+      </section>
       <SuperQuality />
       <Services />
       <SpecialOffer />
