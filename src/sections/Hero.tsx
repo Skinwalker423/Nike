@@ -13,9 +13,9 @@ const Hero = () => {
   };
 
   return (
-    <section
+    <div
       id='home'
-      className='w-full flex xl:flex-row flex-col justify-center min-h-screen gap-10 max-container'
+      className='w-full flex xl:flex-row flex-col justify-center min-h-screen gap-10 max-container xl:padding-1 wide:padding-r padding-b'
     >
       <div className='relative xl:w-2/5 w-full flex flex-col justify-center items-start max-xl:padding-x pt-28'>
         <p className='text-xl font-montserrat text-coral-red'>
@@ -73,7 +73,7 @@ const Hero = () => {
           })}
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

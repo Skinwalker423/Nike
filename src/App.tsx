@@ -14,7 +14,9 @@ function App() {
   return (
     <main className='relative w-full'>
       <Nav />
-      <Hero />
+      <section className='xl:padding-1 wide:padding-r padding-b'>
+        <Hero />
+      </section>
       <PopularProducts />
       <SuperQuality />
       <Services />
