@@ -1,6 +1,4 @@
-import React from "react";
 import Button from "../components/Button";
-import { arrowRight } from "../assets/icons";
 import { shoe4 } from "../assets/images";
 
 const SuperQuality = () => {
@@ -20,17 +18,19 @@ const SuperQuality = () => {
           </span>{" "}
           Shoes
         </h2>
-        <p className='text-slate-gray text-lg font-montserrat leading-8 mt-6 sm:max-w-sm'>
+        <p className='mt-4 lg:max-w-lg info-text'>
           Feel the ground beneath your feet with our new
           line of athletic shoes. Designed with the athlete
           in mind, our shoes provide the support and
           traction you need to perform at your best.
         </p>
-        <p className='text-slate-gray text-lg font-montserrat leading-8 mb-14 sm:max-w-sm'>
+        <p className='mt-6 lg:max-w-lg info-text'>
           Our shoes are made with the highest quality
           materials, so you can be sure they'll last.
         </p>
-        <Button label='Show now' iconUrl={arrowRight} />
+        <div className='mt-11'>
+          <Button label='Show now' />
+        </div>
       </div>
       <div className='flex flex-1 justify-center items-center'>
         <img src={shoe4} alt='shoe collection' />
