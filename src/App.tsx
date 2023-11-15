@@ -20,7 +20,9 @@ function App() {
       <section className='padding'>
         <PopularProducts />
       </section>
-      <SuperQuality />
+      <section className='padding'>
+        <SuperQuality />
+      </section>
       <Services />
       <SpecialOffer />
       <CustomerReviews />
