@@ -20,10 +20,10 @@ const ServiceCard = ({
           height={24}
         />
       </div>
-      <h3 className='mt-10 font-palanquin text-3xl font-bold max-sm:text-2xl'>
+      <h3 className='mt-5 font-palanquin text-3xl font-bold max-sm:text-2xl'>
         {label}
       </h3>
-      <p className='text-slate-gray text-lg font-montserrat leading-8 mt-6 mb-14 sm:max-w-sm break-words'>
+      <p className='text-slate-gray text-lg font-montserrat leading-8 mt-3 sm:max-w-sm break-words'>
         {subtext}
       </p>
     </div>
