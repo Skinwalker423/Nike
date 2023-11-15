@@ -14,16 +14,17 @@ export default {
       "6xl": ["72px", "82px"],
       "8xl": ["96px", "106px"],
     },
-    width: {
-      cardImg: ["280px"],
-    },
-    height: {
-      cardImg: ["280px"],
-    },
+
     extend: {
       fontFamily: {
         palanquin: ["Palanquin", "sans-serif"],
         montserrat: ["Montserrat", "sans-serif"],
+      },
+      width: {
+        cardImg: ["280px"],
+      },
+      height: {
+        cardImg: ["280px"],
       },
       colors: {
         primary: "#ECEEFF",
