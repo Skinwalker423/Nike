@@ -23,8 +23,12 @@ function App() {
       <section className='padding'>
         <SuperQuality />
       </section>
-      <Services />
-      <SpecialOffer />
+      <section className='padding'>
+        <Services />
+      </section>
+      <section className='padding'>
+        <SpecialOffer />
+      </section>
       <CustomerReviews />
       <Subsribe />
       <Footer />
