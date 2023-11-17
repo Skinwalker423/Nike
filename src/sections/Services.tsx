@@ -3,7 +3,7 @@ import { services } from "../constants";
 
 const Services = () => {
   return (
-    <section className='max-container flex justify-center flex-wrap gap-9 '>
+    <section className='max-container flex justify-center flex-wrap gap-9 transition-opacity ease-in opacity-100 hover:opacity-0  '>
       {services.map((service) => {
         return (
           <ServiceCard key={service.label} {...service} />
