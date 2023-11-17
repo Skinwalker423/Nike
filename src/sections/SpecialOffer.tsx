@@ -1,3 +1,4 @@
+import { arrowRight } from "../assets/icons";
 import { offer } from "../assets/images";
 import Button from "../components/Button";
 
@@ -10,19 +11,16 @@ const SpecialOffer = () => {
           alt={"offer"}
           width={773}
           height={687}
+          className='object-contain'
         />
       </div>
       <div className='flex flex-1 flex-col'>
-        <h2 className='mt-10 font-palanquin text-8xl max-sm:text-6xl'>
-          <span className='xl:bg-white xl:whitespace-nowrap relative z-10 pr-10'>
-            We Provide You
-          </span>
-          <br />
+        <h4 className='mt-10 font-palanquin text-4xl max-sm:text-6xl'>
           <span className='text-coral-red inline-block mt-3'>
-            Super Quality
+            Special
           </span>{" "}
-          Shoes
-        </h2>
+          Offer
+        </h4>
         <p className='mt-4 lg:max-w-lg info-text'>
           Feel the ground beneath your feet with our new
           line of athletic shoes. Designed with the athlete
@@ -34,7 +32,7 @@ const SpecialOffer = () => {
           materials, so you can be sure they'll last.
         </p>
         <div className='mt-11'>
-          <Button label='View Details' />
+          <Button label='Shop now' iconUrl={arrowRight} />
         </div>
       </div>
     </section>
