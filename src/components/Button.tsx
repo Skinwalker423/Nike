@@ -2,15 +2,17 @@ type ButtonProps = {
   label: string;
   iconUrl?: string;
   outline?: boolean;
+  color?: string;
 };
 
 const Button = ({
   label = "Submit",
   iconUrl,
   outline,
+  color = "coral-red",
 }: ButtonProps) => {
   const themeColor = outline
-    ? `text-slate-400 border-slate-400 hover:bg-slate-400 hover:text-white`
+    ? `text-${color} border-${color} hover:bg-${color} hover:text-white`
     : "bg-coral-red rounded-full text-white border-coral-red";
   return (
     <button

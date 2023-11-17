@@ -31,9 +31,13 @@ const SpecialOffer = () => {
           Our shoes are made with the highest quality
           materials, so you can be sure they'll last.
         </p>
-        <div className='mt-11 flex gap-5'>
+        <div className='mt-11 flex flex-wrap gap-5'>
           <Button label='Shop now' iconUrl={arrowRight} />
-          <Button label='Learn More' outline />
+          <Button
+            label='Learn More'
+            outline
+            color='slate-400'
+          />
         </div>
       </div>
     </section>
