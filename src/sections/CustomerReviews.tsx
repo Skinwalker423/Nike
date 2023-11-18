@@ -1,15 +1,18 @@
-import React from "react";
-
 const CustomerReviews = () => {
   return (
     <section className='max-container'>
-      <h1 className='font-palanquin text-4xl font-bold text-center'>
+      <h3 className='font-palanquin text-4xl font-bold text-center'>
         What Are{" "}
         <span className='text-coral-red inline-block mt-3'>
           Customers
         </span>{" "}
         Saying?
-      </h1>
+      </h3>
+      <p className='info-text m-auto mt-4 max-w-lg text-center'>
+        Read genuine stories from our satisfied customers
+        about their exceptional experiences with us
+      </p>
+      <div className='mt-24 flex flex-1 justify-evenly items-center max-lg:flex-col gap-14'></div>
     </section>
   );
 };
