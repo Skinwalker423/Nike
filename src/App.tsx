@@ -30,10 +30,10 @@ function App() {
       </section>
       <section
         ref={servicesRef}
-        className={`padding transition-transform duration-700 ease-linear ${
+        className={`padding transition-transform duration-500 ease-linear ${
           isVisible
-            ? "opacity-100 translate-y-0"
-            : "opacity-0 translate-y-40"
+            ? "opacity-100 -translate-y-10"
+            : "opacity-0 translate-y-10"
         }`}
       >
         <Services />
