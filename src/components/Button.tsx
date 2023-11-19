@@ -3,6 +3,7 @@ type ButtonProps = {
   iconUrl?: string;
   outline?: boolean;
   color?: string;
+  fullWidth?: boolean;
 };
 
 const Button = ({
@@ -10,6 +11,7 @@ const Button = ({
   iconUrl,
   outline,
   color = "coral-red",
+  fullWidth,
 }: ButtonProps) => {
   const themeColor = outline
     ? `text-${color} border-${color} hover:bg-${color} hover:text-white`
@@ -17,7 +19,9 @@ const Button = ({
   return (
     <button
       type='button'
-      className={`flex justify-center items-center gap-2 px-7 py-4 font-montserrat text-lg leading-none rounded-full border ${themeColor}`}
+      className={`flex justify-center items-center ${
+        fullWidth && "w-full"
+      } gap-2 px-7 py-4 font-montserrat text-lg leading-none rounded-full border ${themeColor}`}
     >
       {label}
 

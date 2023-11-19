@@ -13,13 +13,14 @@ const Subsribe = () => {
         </span>{" "}
         & Newsletter
       </h4>
-      <div className='flex items-center max-lg:w-full lg:w-1/2 xl:w-1/3 h-20 px-4 py-2 border rounded-full relative'>
+      <div className='lg:max-w-[40%] w-full flex items-center max-sm:flex-col gap-5 p-2.5 sm:border sm:border-slate-gray rounded-full'>
         <input
-          className='w-1/2 max-md:w-2/3 lg:w-2/3 py-2'
+          className='input'
           type='text'
+          placeholder='enter your email'
         />
-        <div className='absolute right-2 top-3'>
-          <Button label='Sign Up' />
+        <div className='flex max-sm:justify-end items-center max-sm:w-full'>
+          <Button label='Sign Up' fullWidth />
         </div>
       </div>
     </section>
