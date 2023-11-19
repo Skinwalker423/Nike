@@ -41,8 +41,12 @@ function App() {
       <section className='padding'>
         <SpecialOffer />
       </section>
-      <CustomerReviews />
-      <Subsribe />
+      <section className='padding'>
+        <CustomerReviews />
+      </section>
+      <section className='padding'>
+        <Subsribe />
+      </section>
       <Footer />
     </main>
   );
