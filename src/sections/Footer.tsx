@@ -1,11 +1,10 @@
 import { footerLogo } from "../assets/images";
-import { socialMedia } from "../constants";
+import { footerLinks, socialMedia } from "../constants";
 
 const Footer = () => {
   return (
     <footer className='max-container'>
       <div className='flex justify-between items-start gap-20 flex-wrap max-lg:flex-col bg-black'>
-        Test
         <div className='flex flex-col items-start'>
           <a href='/'>
             <img
@@ -23,7 +22,10 @@ const Footer = () => {
           <div className='flex items-center gap-5 mt-8'>
             {socialMedia.map(({ src, alt }) => {
               return (
-                <div className='flex justify-center items-center rounded-full bg-white-400 h-12 w-12'>
+                <div
+                  key={alt}
+                  className='flex justify-center items-center rounded-full bg-white-400 h-12 w-12'
+                >
                   <img
                     src={src}
                     alt={alt}
@@ -35,6 +37,29 @@ const Footer = () => {
               );
             })}
           </div>
+        </div>
+        <div className='flex flex-1 justify-between lg:gap-10 gap-20 flex-wrap'>
+          {footerLinks.map(({ links, title }) => {
+            return (
+              <div key={title}>
+                <h4 className='text-white font-montserrat text-2xl leading-normal mb-6 font-medium'>
+                  {title}
+                </h4>
+                <ul>
+                  {links.map(({ name, link }) => {
+                    return (
+                      <li
+                        className='text-white-400 font-montserrat text-base hover:text-slate-gray'
+                        key={name}
+                      >
+                        <a href={link}>{name}</a>
+                      </li>
+                    );
+                  })}
+                </ul>
+              </div>
+            );
+          })}
         </div>
       </div>
     </footer>
