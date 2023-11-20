@@ -47,7 +47,9 @@ function App() {
       <section className='padding'>
         <Subsribe />
       </section>
-      <Footer />
+      <section className='padding'>
+        <Footer />
+      </section>
     </main>
   );
 }
