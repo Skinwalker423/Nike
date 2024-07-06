@@ -1,3 +1,8 @@
+
+![nike_landing_page](https://github.com/Skinwalker423/Nike/assets/85347852/a26e1de6-6ae5-40f0-89a5-58d3f2a08d75)
+
+
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
